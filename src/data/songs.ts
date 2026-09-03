@@ -34,4 +34,11 @@ export const songs: Song[] = [
     cover: "/covers/winner-winner-chicken-dinner.png",
     audio: "/audio/winner-winner-chicken-dinner.mp3",
   },
+
+  {
+    id: 5,
+    title: "To Good Health!",
+    cover: "/covers/winner-winner-chicken-dinner.png",
+    audio: "/audio/winner-winner-chicken-dinner.mp3",
+  },
 ];
