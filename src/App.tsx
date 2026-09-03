@@ -1,10 +1,15 @@
+import { useState } from 'react'
 import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import SongCard from './components/SongCard'
+import SongPlayer from './components/SongPlayer'
+import type { Song } from './data/songs'
 import { songs } from './data/songs'
 
 export default function App() {
+  const [selectedSong, setSelectedSong] = useState<Song | null>(null)
+
   return (
     <>
       <Header />
@@ -18,13 +23,17 @@ export default function App() {
 
           <div className="song-grid">
             {songs.map((song) => (
-              <SongCard key={song.id} song={song} />
+              <SongCard key={song.id} song={song} onSelect={setSelectedSong} />
             ))}
           </div>
         </section>
       </main>
 
       <Footer />
+
+      {selectedSong && (
+        <SongPlayer song={selectedSong} onClose={() => setSelectedSong(null)} />
+      )}
     </>
   )
 }
