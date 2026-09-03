@@ -3,6 +3,8 @@ export type Song = {
   title: string;
   cover: string;
   audio: string;
+    year?: number
+  lyrics?: string
 };
 
 type SongGridProps = {

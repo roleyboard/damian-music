@@ -4,6 +4,7 @@ export interface Song {
   cover: string;
   audio: string;
   year?: number;
+  lyrics?: string;
 }
 
 export const songs: Song[] = [
@@ -33,6 +34,7 @@ export const songs: Song[] = [
     title: "Winner, Winner, Chicken Dinner",
     cover: "/covers/winner-winner-chicken-dinner.png",
     audio: "/audio/winner-winner-chicken-dinner.mp3",
+    lyrics: "/lyrics/winner-winner-chicken-dinner.md",
   },
 
   {
