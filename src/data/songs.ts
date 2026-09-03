@@ -38,7 +38,7 @@ export const songs: Song[] = [
   {
     id: 5,
     title: "To Good Health!",
-    cover: "/covers/to-good health.png",
-    audio: "/audio/to-good health.mp3",
+    cover: "/covers/to-good-health.png",
+    audio: "/audio/to-good-health.mp3",
   },
 ];
