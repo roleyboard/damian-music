@@ -41,4 +41,11 @@ export const songs: Song[] = [
     cover: "/covers/to-good-health.png",
     audio: "/audio/to-good-health.mp3",
   },
+
+  {
+    id: 6,
+    title: "Truth Ain’t What It Used to Be",
+    cover: "/covers/truth-aint-what-it-used-to-be.png",
+    audio: "/audio/truth-aint-what-it-used-to-be.mp3",
+  },
 ];
