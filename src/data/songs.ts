@@ -27,4 +27,11 @@ export const songs: Song[] = [
     cover: "/covers/cinderella-in-the-rain.png",
     audio: "/audio/cinderella-in-the-rain.mp3",
   },
+
+  {
+    id: 4,
+    title: "Winner, Winner, Chicken Dinner",
+    cover: "/covers/winner-winner-chicken-dinner.png",
+    audio: "/audio/winner-winner-chicken-dinner.mp3",
+  },
 ];
