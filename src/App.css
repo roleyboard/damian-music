@@ -1,0 +1,145 @@
+.site-header {
+  padding: 96px 32px 72px;
+  text-align: left;
+}
+
+.site-header h1 {
+  margin: 0 0 12px;
+}
+
+.site-header p {
+  font-size: 18px;
+}
+
+.music {
+  padding: 48px 32px 80px;
+  border-top: 1px solid var(--border);
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.section-heading p {
+  order: 2;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.song-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.song-card {
+  min-width: 0;
+  text-align: left;
+}
+
+.song-cover {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.song-card h2 {
+  margin: 20px 0 4px;
+}
+
+.song-card p {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.song-card audio {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.site-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 48px;
+  padding: 40px 32px;
+  border-top: 1px solid var(--border);
+  text-align: left;
+}
+
+.site-footer p {
+  font-size: 14px;
+}
+
+.site-footer a {
+  color: var(--text-h);
+  text-decoration: none;
+}
+
+.site-footer a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.footer-identity,
+.footer-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-identity {
+  gap: 8px;
+}
+
+.footer-meta {
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.footer-wordmark {
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.back-to-top {
+  display: inline-flex;
+  gap: 6px;
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    padding: 64px 20px 48px;
+  }
+
+  .music {
+    padding: 36px 20px 56px;
+  }
+
+  .song-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 32px 20px;
+  }
+
+  .footer-meta {
+    align-items: flex-start;
+  }
+}
